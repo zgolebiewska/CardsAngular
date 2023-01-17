@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "zaproszenie",
+    "prize": 10,
+    "amount": 15,
+    "img": "zaproszenie.jpg"
+  },
+  {
+    "id": 2,
+    "title": "swieta1",
+    "prize": 12,
+    "amount": 20,
+    "img": "swieta1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "swieta2",
+    "prize": 18,
+    "amount": 14,
+    "img": "swieta2.jpg"
+  },
+  {
+    "id": 4,
+    "title": "birthday",
+    "prize": 14,
+    "amount": 5,
+    "img": "birthday.jpg"
+  },
+  {
+    "id": 5,
+    "title": "hermione",
+    "prize": 20,
+    "amount": 7,
+    "img": "hermione.jpg"
+  }
+]

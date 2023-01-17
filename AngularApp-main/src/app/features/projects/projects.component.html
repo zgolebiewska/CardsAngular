@@ -1,0 +1,40 @@
+<section class="wrapper">
+  <button class="scroll" appScroll>UP</button>
+  <app-navbar></app-navbar>
+  <div class="verse">
+    <h2>
+      PROJECTS
+    </h2>
+    <h2>
+      ({{(projectList.length)}})
+    </h2>
+
+  </div>
+  <div style="padding-left: 70px">
+    <ul class="row">
+      <li class="column">
+        <ul *ngFor="let project of projectList" class="column">
+          <ul class="element">
+            <li>
+              <img class="cards" src="../../../assets/cards/{{project.img}}"></li>
+            <li>
+              <h3 class="title">{{project.title}}</h3>
+              <h3 class="prize">{{project.prize}} zł</h3>
+              <ul class="icons">
+                <h3 class="amount">amount: {{project.amount}}</h3>
+                <h3></h3>
+                            <h3><button (click)="increment()">ADD</button></h3>
+                            <h3><button (click)="decrement()">REM</button></h3>
+               <!-- <h3 style="text-align: center; margin-top: 25px"><a href="favourites"><img style="width: 20px; height:20px;" src="../../../assets/logo/heart.svg"></a></h3>
+                <h3 style="text-align: center; margin-top: 25px"><a href="../cart"><img style="width: 20px; height:20px;" src="../../../assets/logo/263142.png"></a></h3>-->
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <app-footer></app-footer>
+</section>
+
+
