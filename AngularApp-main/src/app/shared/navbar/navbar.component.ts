@@ -9,7 +9,7 @@ import {select, Store} from "@ngrx/store";
 })
 export class NavbarComponent implements OnInit{
 
-  count$: Observable<number>;
+  count$: Observable<number> = this.store.pipe(select('count'));
 
   constructor(private store: Store<{ count: number }>) {
     this.count$ = store.pipe(select('count'));
